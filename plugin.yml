@@ -1,0 +1,4 @@
+name: HungerPlusPlus
+main: lowbrain.hungerplusplus.Main
+version: 1.0.0
+description: Increase the rate of Hunger and/or give a constant steady hunger drain. 

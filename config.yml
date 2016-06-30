@@ -1,0 +1,34 @@
+Hunger:
+#hunger_rate increases the exhaustion level so that you hit the exhaustion
+# limit and therefore lose saturation/food sooner than you normally would. This
+# affects all things that drain saturation/food, such as walking, jumping,
+# sprinting, fighting, and so forth (This includes increasing the amount of
+# hunger that eating rotten flesh causes, making it a food of last resort).
+
+#1 is normal, 2 is twice the normal hunger rate, 3 is 3 times the normal hunger
+# rate, and so forth. Decimal numbers like 3.56 are fine. Additionally, setting
+# it to negative numbers will lengthen the time it takes for hunger to affect
+# you. -2 means hunger will drain your food twice as slowly as normal, -3 will
+#make your saturation/food bar last three times as long as usual, and so forth.
+  hunger_rate:  1
+
+#basal_metabolic_rate enables a configurable steady drain on your
+# saturation/food levels that occurs independently of and in addition to normal
+#drains like walking, jumping, sprinting, fighting, and so forth. This means
+#you will slowly get hungrier even if you are holding still, not moving at all,
+# though not as quickly as you will if you're doing other things.
+
+#0 is disabled, as is normal in Minecraft. The number you put in is the number
+# of Minecraft day/night cycles (20 minutes each) it will take for a newly
+# spawned player with 5 saturation points and 20 food points to completely run
+# out of food and start starving. For example, putting down 3 will mean a
+# newly spawned player will start starving in three Minecraft days, assuming
+# they held completely still the whole time. Decimal numbers like 3.56 are 
+# fine. Any additional activities like moving, mining, and so on, would 
+# increase that as normal. NOTE: The hunger_rate is factored into the 
+# basal_metabolic_rate setting as well, so setting basal_metabolic_rate to 3
+# days would give 3 days no matter what hunger_rate was set to.
+  basal_metabolic_rate: 0
+
+#debug mode will show the new exhaustion starting point and the current exhaustion level in the console if set to 1. 0 is disabled.
+  debug_mode: 0
