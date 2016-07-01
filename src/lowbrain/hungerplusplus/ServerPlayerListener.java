@@ -30,6 +30,7 @@ implements Listener {
 				if(debug_mode == 1){
 					plugin.getLogger().info(e.getPlayer().getName() + "disconnected, task now cancelled !");
 				}
+				lstTask.remove(i);
 		        break;
 			}
 		}
